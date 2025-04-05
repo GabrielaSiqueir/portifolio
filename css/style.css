@@ -1,12 +1,63 @@
-.header {
-    background-color: #4CAF50;
+body {
+    background-color: #760955;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    text-align: center;
+}
+ul {
+    list-style: none;        /* remove as bolinhas */
+    padding: 0;              /* remove o espaçamento padrão */
+    text-align: center;      /* centraliza os itens */
+  }
+  
+  ul li {
+    display: inline-block;   /* coloca os itens em linha */
+    margin: 0 10px;          /* dá um espacinho entre os itens */
+  }
+  
+  ul li a {
+    color: white;            /* muda a cor do link */
+    text-decoration: none;   /* remove o sublinhado */
+  }
+  
+/* Títulos */
+h1, h2, h3 {
+    color: #ff69b4;
+}
+
+/* Parágrafos */
+p {
+    color: #ffffff;
+}
+
+/* Links */
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #ff69b4;
+    color: #760955;
+}
+
+/* Seções ou containers alternativos */
+.section-alt {
+    background-color: #a03374;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Bordas ou separadores sutis */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #b565a7;
+    margin: 40px 0;
 }
