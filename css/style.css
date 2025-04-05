@@ -6,33 +6,25 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+.header {
+    background-color: #760955;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
 ul {
-    list-style: none;        /* remove as bolinhas */
-    padding: 0;              /* remove o espaçamento padrão */
-    text-align: center;      /* centraliza os itens */
-  }
-  
-  ul li {
-    display: inline-block;   /* coloca os itens em linha */
-    margin: 0 10px;          /* dá um espacinho entre os itens */
-  }
-  
-  ul li a {
-    color: white;            /* muda a cor do link */
-    text-decoration: none;   /* remove o sublinhado */
-  }
-  
-/* Títulos */
-h1, h2, h3 {
-    color: #ff69b4;
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-/* Parágrafos */
-p {
-    color: #ffffff;
+ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-/* Links */
 ul li a {
     color: white;
     text-decoration: none;
@@ -46,18 +38,166 @@ ul li a:hover {
     color: #760955;
 }
 
-/* Seções ou containers alternativos */
-.section-alt {
-    background-color: #a03374;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 20px;
+h1, h2, h3 {
+    color: #ff69b4;
 }
 
-/* Bordas ou separadores sutis */
+p {
+    color: #ffffff;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.section, .section-alt, section article {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.section-alt {
+    background-color: #a03374;
+}
+
 hr {
     border: none;
     height: 2px;
     background-color: #b565a7;
     margin: 40px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #760955;
+}
+
+/* Animação suave ao carregar */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.header {
+    background-color: #8c0f66;
+    padding: 30px 20px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #ff69b4;
+}
+
+.menu {
+    margin-top: 15px;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.menu li a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #ff69b4;
+    color: #760955;
+}
+#hero {
+    background: linear-gradient(135deg, #a03374, #760955);
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+#projetos img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projetos img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+#skills div {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #5c0443;
+    border-top: 2px solid #b565a7;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+}
+footer a {
+    color: #ff69b4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ffffff;
 }
